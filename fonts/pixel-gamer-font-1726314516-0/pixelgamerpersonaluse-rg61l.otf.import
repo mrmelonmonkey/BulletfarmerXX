@@ -1,0 +1,39 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://cwyuyikc7c4ht"
+path="res://.godot/imported/pixelgamerpersonaluse-rg61l.otf-4aad73cbc24019b5553dec2a96d00a24.fontdata"
+
+[deps]
+
+source_file="res://fonts/pixel-gamer-font-1726314516-0/pixelgamerpersonaluse-rg61l.otf"
+dest_files=["res://.godot/imported/pixelgamerpersonaluse-rg61l.otf-4aad73cbc24019b5553dec2a96d00a24.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+disable_embedded_bitmaps=true
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+hinting=1
+subpixel_positioning=1
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=false
+preload=[{
+"chars": [33, 0, 34, 39, 35, 40, 125, 124, 103, 119, 65, 80, 64, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 82, 81, 83, 84, 85, 87, 86, 88, 89, 90, 91, 92, 93, 94, 95, 63, 47, 62, 61, 45, 60, 59, 43, 42, 58, 41, 111, 110, 109, 108, 107, 106, 105, 104, 102, 101, 100, 99, 98, 97, 112, 96, 113, 114, 115, 116, 117, 118, 120, 121, 122, 123, 126],
+"glyphs": [],
+"name": "New Configuration",
+"size": Vector2i(16, 0)
+}]
+language_support={}
+script_support={}
+opentype_features={}

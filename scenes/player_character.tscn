@@ -1,0 +1,67 @@
+[gd_scene load_steps=14 format=3 uid="uid://bvlfmwxryjwly"]
+
+[ext_resource type="Texture2D" uid="uid://b4nmgxxn5be3l" path="res://Blue_Boy_Animation-Sheet_v2.png" id="2_fvm82"]
+[ext_resource type="Texture2D" uid="uid://c4ljk204w5pis" path="res://Shadow.png" id="5_v6yg1"]
+[ext_resource type="Animation" uid="uid://b0dlpc3be8ii6" path="res://RESET.res" id="6_8uyva"]
+[ext_resource type="Animation" uid="uid://cgk3sihn3387q" path="res://Player/Idle_right.res" id="7_4luta"]
+[ext_resource type="Animation" uid="uid://bl4sovsirnpnx" path="res://Player/Idle_left.res" id="8_2e3x7"]
+[ext_resource type="Animation" uid="uid://c6mfft10ot8v" path="res://Player/Move_right.res" id="9_p4vav"]
+[ext_resource type="Animation" uid="uid://btd8xa3g4xgro" path="res://Player/Move_left.res" id="10_a280h"]
+[ext_resource type="Script" path="res://scenes/state_machine.gd" id="10_yi52c"]
+[ext_resource type="Script" path="res://scripts/IdleState.gd" id="11_an5gk"]
+[ext_resource type="Script" path="res://scripts/PlayerStats.gd" id="12_cecxj"]
+[ext_resource type="Script" path="res://scripts/MoveState.gd" id="12_e20tu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dspj3"]
+size = Vector2(13.5, 13.5)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1oiug"]
+_data = {
+"Idle_left": ExtResource("8_2e3x7"),
+"Idle_right": ExtResource("7_4luta"),
+"Move_left": ExtResource("10_a280h"),
+"Move_right": ExtResource("9_p4vav"),
+"RESET": ExtResource("6_8uyva")
+}
+
+[node name="PlayerStats" type="Node"]
+script = ExtResource("12_cecxj")
+
+[node name="PlayerCharacter" type="CharacterBody2D" parent="."]
+position = Vector2(68, 26)
+motion_mode = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerCharacter"]
+position = Vector2(0, 3.75)
+shape = SubResource("RectangleShape2D_dspj3")
+
+[node name="Sprite2D" type="Sprite2D" parent="PlayerCharacter"]
+position = Vector2(0, 11)
+texture = ExtResource("2_fvm82")
+offset = Vector2(0, -8.14)
+hframes = 8
+vframes = 4
+region_enabled = true
+region_rect = Rect2(8, 8, 256, 128)
+
+[node name="Shadow" type="Sprite2D" parent="PlayerCharacter"]
+modulate = Color(1, 1, 1, 0.290196)
+show_behind_parent = true
+position = Vector2(0, 10)
+texture = ExtResource("5_v6yg1")
+region_enabled = true
+region_rect = Rect2(9.41362, 23.8751, 29.39, 15.8613)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="PlayerCharacter"]
+libraries = {
+"": SubResource("AnimationLibrary_1oiug")
+}
+
+[node name="StateMachine" type="Node" parent="PlayerCharacter"]
+script = ExtResource("10_yi52c")
+
+[node name="IdleState" type="Node" parent="PlayerCharacter/StateMachine"]
+script = ExtResource("11_an5gk")
+
+[node name="MoveState" type="Node" parent="PlayerCharacter/StateMachine"]
+script = ExtResource("12_e20tu")
