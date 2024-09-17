@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://4oi6q10fv46h"]
+
+[ext_resource type="FontFile" uid="uid://co843bbdp61ga" path="res://fonts/bedstead/bedstead.otf" id="1_7cx11"]
+
+[resource]
+default_font = ExtResource("1_7cx11")

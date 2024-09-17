@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="StartingStats" load_steps=2 format=3 uid="uid://c25bjhq5jryys"]
+
+[ext_resource type="Script" path="res://scripts/StartingStats.gd" id="1_ohthu"]
+
+[resource]
+script = ExtResource("1_ohthu")
+level = 0
+exp = 0
+max_health = 10
+health = 10
+speed = 48

@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://b5qxb3gti6ahm"]
+
+[ext_resource type="Script" path="res://health.gd" id="1_pxjsj"]
+
+[node name="player_health_display" type="Container"]
+anchors_preset = -1
+anchor_right = 0.222
+anchor_bottom = 0.093
+offset_right = -255.744
+offset_bottom = -60.264
+script = ExtResource("1_pxjsj")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="HealthCount" type="RichTextLabel" parent="HBoxContainer"]
+layout_mode = 2
+fit_content = true
+
+[node name="HealthIcon" type="ColorRect" parent="."]
+layout_mode = 2
+color = Color(0.54, 0.54, 0.54, 1)

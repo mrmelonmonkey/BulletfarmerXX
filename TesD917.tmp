@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnmxf3kfsayp5"]
+
+[ext_resource type="PackedScene" uid="uid://6bflu34yop0s" path="res://scenes/player_character.tscn" id="1_yr4fy"]
+[ext_resource type="PackedScene" uid="uid://briydtvkxgvdv" path="res://scenes/player_health_display.tscn" id="2_whxv1"]
+
+[node name="Node" type="Node"]
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="Node2D"]
+visible = false
+
+[node name="Player" parent="Node2D" instance=ExtResource("1_yr4fy")]
+
+[node name="Environment" type="Node2D" parent="Node2D"]
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="player_health_display" parent="UI" instance=ExtResource("2_whxv1")]
+layout_direction = 2
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+offset_left = -3.0
+offset_top = 1.0
+offset_right = -3.0
+offset_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Container" type="Container" parent="UI"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[connection signal="health_changed" from="Node2D/Player" to="UI/player_health_display" method="on_health_updated"]
