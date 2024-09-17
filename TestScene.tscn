@@ -1,14 +1,8 @@
-[gd_scene load_steps=3 format=4 uid="uid://cnmxf3kfsayp5"]
+[gd_scene load_steps=2 format=4 uid="uid://cnmxf3kfsayp5"]
 
 [ext_resource type="TileSet" uid="uid://bfi2rxsd8efaa" path="res://new_tile_set.tres" id="1_bw7cq"]
-[ext_resource type="PackedScene" uid="uid://6bflu34yop0s" path="res://player_character.tscn" id="1_yr4fy"]
 
 [node name="Node2D" type="Node2D"]
-scale = Vector2(2, 2)
-
-[node name="PlayerCharacter" parent="." instance=ExtResource("1_yr4fy")]
-z_index = 10
-position = Vector2(265, 186.5)
 scale = Vector2(2, 2)
 
 [node name="TerrainLayer" type="TileMapLayer" parent="."]
