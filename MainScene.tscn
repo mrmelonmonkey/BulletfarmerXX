@@ -1,11 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://cnmxf3kfsayp5"]
+[gd_scene load_steps=5 format=3 uid="uid://vqfmg4mowscw"]
 
-[ext_resource type="PackedScene" uid="uid://c5d3mwt2k7em4" path="res://scenes/PlayerStats.tscn" id="1_8e4ji"]
-[ext_resource type="Script" path="res://scripts/StartingStats.gd" id="2_a5qmx"]
-[ext_resource type="PackedScene" uid="uid://briydtvkxgvdv" path="res://scenes/player_health_display.tscn" id="2_whxv1"]
+[ext_resource type="PackedScene" uid="uid://c5d3mwt2k7em4" path="res://scenes/PlayerStats.tscn" id="1_b1xub"]
+[ext_resource type="Script" path="res://scripts/StartingStats.gd" id="2_8wne5"]
+[ext_resource type="PackedScene" uid="uid://briydtvkxgvdv" path="res://scenes/player_health_display.tscn" id="3_jynsq"]
 
 [sub_resource type="Resource" id="Resource_47a5d"]
-script = ExtResource("2_a5qmx")
+script = ExtResource("2_8wne5")
 level = 1
 experience = 99
 max_health = 200
@@ -21,7 +21,7 @@ visible = false
 
 [node name="Environment" type="Node2D" parent="Node2D"]
 
-[node name="PlayerStats" parent="Node2D" instance=ExtResource("1_8e4ji")]
+[node name="PlayerStats" parent="Node2D" instance=ExtResource("1_b1xub")]
 starting_stats = SubResource("Resource_47a5d")
 
 [node name="UI" type="Control" parent="."]
@@ -32,7 +32,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="player_health_display" parent="UI" instance=ExtResource("2_whxv1")]
+[node name="player_health_display" parent="UI" instance=ExtResource("3_jynsq")]
 layout_direction = 2
 layout_mode = 1
 anchors_preset = 3
