@@ -4,8 +4,12 @@ extends Node
 
 var current_state : State
 var states : Dictionary = {}
+
+var move_forbidden : bool
+
 @onready var player_stats : PlayerStats = $".."
 @onready var player_character : CharacterBody2D = $"../PlayerCharacter"
+
 
 func _ready():
 	for child in get_children():
@@ -28,16 +32,15 @@ func _physics_process(delta: float):
 func on_child_transition(state, new_state_name):
 	if state != current_state:
 		return
-	
 	var new_state = states.get(new_state_name.to_lower())
 	if !new_state:
 		return
-	
 	if current_state:
 		current_state.exit()
-	
 	new_state.enter()
-	
 	current_state = new_state
-	
-	
+
+func transition_to(new_state_name):
+	current_state.exit()
+	current_state = states.get(new_state_name)
+	current_state.enter()

@@ -1,5 +1,6 @@
 extends State
-class_name IdleState
+
+class_name InteractState
 
 @onready var state_machine: Node = $Node2D/Player/PlayerCharacter/StateMachine
 @onready var player_stats: PlayerStats = $"../.."
@@ -25,13 +26,4 @@ func Physics_Update(delta):
 			animation_player.play("Idle_right")
 	
 func Update(_delta):
-	#if player_stats.move_vec.length() > 0:
-	#	Transitioned.emit(self,"MoveState")
 	pass
-
-func _input(event: InputEvent) -> void:
-	if (event.is_action("move_down") or 
-	event.is_action("move_up") or 
-	event.is_action("move_left") or 
-	event.is_action("move_right")):
-		Transitioned.emit(self,"MoveState")

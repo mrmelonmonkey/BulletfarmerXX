@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b4nmgxxn5be3l"
-path="res://.godot/imported/Blue_Boy_Animation-Sheet_v2.png-9abd5ade7345e54168916e8084754761.ctex"
+path="res://.godot/imported/Blue_Boy_Animation-Sheet_v2.png-eb923cf21eb43d023555f38118ec0458.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Blue_Boy_Animation-Sheet_v2.png"
-dest_files=["res://.godot/imported/Blue_Boy_Animation-Sheet_v2.png-9abd5ade7345e54168916e8084754761.ctex"]
+source_file="res://Player/Blue_Boy_Animation-Sheet_v2.png"
+dest_files=["res://.godot/imported/Blue_Boy_Animation-Sheet_v2.png-eb923cf21eb43d023555f38118ec0458.ctex"]
 
 [params]
 

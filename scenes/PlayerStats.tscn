@@ -1,14 +1,14 @@
 [gd_scene load_steps=14 format=3 uid="uid://c5d3mwt2k7em4"]
 
 [ext_resource type="Script" path="res://scripts/PlayerStats.gd" id="1_le48a"]
-[ext_resource type="Texture2D" uid="uid://b4nmgxxn5be3l" path="res://Blue_Boy_Animation-Sheet_v2.png" id="3_hbf6s"]
+[ext_resource type="Texture2D" uid="uid://b4nmgxxn5be3l" path="res://Player/Blue_Boy_Animation-Sheet_v2.png" id="3_hbf6s"]
 [ext_resource type="Texture2D" uid="uid://c4ljk204w5pis" path="res://Shadow.png" id="4_rs2mi"]
 [ext_resource type="Animation" uid="uid://bl4sovsirnpnx" path="res://Player/Idle_left.res" id="5_b7yax"]
 [ext_resource type="Animation" uid="uid://cgk3sihn3387q" path="res://Player/Idle_right.res" id="6_rjj11"]
 [ext_resource type="Animation" uid="uid://btd8xa3g4xgro" path="res://Player/Move_left.res" id="7_cbrp0"]
 [ext_resource type="Animation" uid="uid://c6mfft10ot8v" path="res://Player/Move_right.res" id="8_ilwks"]
 [ext_resource type="Animation" uid="uid://b0dlpc3be8ii6" path="res://RESET.res" id="9_hx36p"]
-[ext_resource type="Script" path="res://scenes/state_machine.gd" id="10_y6qmu"]
+[ext_resource type="Script" path="res://scripts/state_machine.gd" id="10_y6qmu"]
 [ext_resource type="Script" path="res://scripts/IdleState.gd" id="11_wowqy"]
 [ext_resource type="Script" path="res://scripts/MoveState.gd" id="12_ye52m"]
 

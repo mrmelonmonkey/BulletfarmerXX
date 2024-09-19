@@ -1,0 +1,210 @@
+[gd_scene load_steps=11 format=4 uid="uid://cnmxf3kfsayp5"]
+
+[ext_resource type="Script" path="res://scripts/tile_map.gd" id="1_eryf5"]
+[ext_resource type="Texture2D" uid="uid://cr0su0ss3mqaw" path="res://scenes/world_tiles_atlas_compressed.tres" id="2_qewxa"]
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_ws510"]
+tile_data = PackedInt32Array(0, 851968, 7, 65536, 851968, 8, 1, 917504, 7, 65537, 917504, 8)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_47any"]
+tile_data = PackedInt32Array(0, 851968, 7, 65536, 851968, 8, 1, 917504, 7, 65537, 917504, 8, 2, 983040, 7, 65538, 983040, 8)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_rnxtm"]
+tile_data = PackedInt32Array(0, 983040, 7, 65536, 983040, 8, 1, 1048576, 7, 65537, 1048576, 8, 2, 1114112, 7, 65538, 1114112, 8)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_3rada"]
+tile_data = PackedInt32Array(0, 1048576, 7, 65536, 1048576, 8, 1, 1114112, 7, 65537, 1114112, 8)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s1226"]
+resource_name = "world_tiles_atlas"
+texture = ExtResource("2_qewxa")
+texture_region_size = Vector2i(32, 32)
+29:12/0 = 0
+29:12/0/terrain_set = 0
+29:12/0/terrain = 0
+29:12/0/probability = 0.0
+30:12/0 = 0
+30:12/0/terrain_set = 0
+30:12/0/terrain = 0
+30:12/0/probability = 0.0
+31:12/0 = 0
+31:12/0/terrain_set = 0
+31:12/0/terrain = 0
+31:12/0/probability = 0.0
+31:13/0 = 0
+31:13/0/terrain_set = 0
+31:13/0/terrain = 0
+31:13/0/probability = 0.0
+31:14/0 = 0
+31:14/0/terrain_set = 0
+31:14/0/terrain = 0
+31:14/0/probability = 0.0
+31:15/0 = 0
+31:15/0/terrain_set = 0
+31:15/0/terrain = 0
+31:15/0/probability = 0.0
+30:15/0 = 0
+30:15/0/terrain_set = 0
+30:15/0/terrain = 0
+30:15/0/probability = 0.0
+30:14/0 = 0
+30:14/0/terrain_set = 0
+30:14/0/terrain = 0
+30:14/0/probability = 0.0
+30:13/0 = 0
+30:13/0/terrain_set = 0
+30:13/0/terrain = 0
+29:13/0 = 0
+29:13/0/terrain_set = 0
+29:13/0/terrain = 0
+29:13/0/probability = 0.0
+29:14/0 = 0
+29:14/0/terrain_set = 0
+29:14/0/terrain = 0
+29:14/0/probability = 0.0
+29:15/0 = 0
+29:15/0/terrain_set = 0
+29:15/0/terrain = 0
+29:15/0/probability = 0.0
+28:15/0 = 0
+28:15/0/terrain_set = 0
+28:15/0/terrain = 0
+28:15/0/probability = 0.0
+28:14/0 = 0
+28:14/0/terrain_set = 0
+28:14/0/terrain = 0
+28:14/0/probability = 0.0
+28:13/0 = 0
+28:13/0/terrain_set = 0
+28:13/0/terrain = 0
+28:13/0/probability = 0.0
+0:0/0 = 0
+28:12/0 = 0
+28:12/0/terrain_set = 0
+28:12/0/terrain = 0
+28:12/0/probability = 0.0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_btju2"]
+texture = ExtResource("2_qewxa")
+texture_region_size = Vector2i(32, 32)
+28:12/0 = 0
+28:12/0/terrain_set = 0
+28:12/0/terrain = 0
+28:12/0/probability = 0.0
+28:13/0 = 0
+28:13/0/terrain_set = 0
+28:13/0/terrain = 0
+28:13/0/probability = 0.0
+28:14/0 = 0
+28:14/0/terrain_set = 0
+28:14/0/terrain = 0
+28:14/0/probability = 0.0
+28:15/0 = 0
+28:15/0/terrain_set = 0
+28:15/0/terrain = 0
+28:15/0/probability = 0.0
+29:15/0 = 0
+29:15/0/terrain_set = 0
+29:15/0/terrain = 0
+29:15/0/probability = 0.0
+29:14/0 = 0
+29:14/0/terrain_set = 0
+29:14/0/terrain = 0
+29:14/0/probability = 0.0
+29:13/0 = 0
+29:13/0/terrain_set = 0
+29:13/0/terrain = 0
+29:13/0/probability = 0.0
+29:12/0 = 0
+29:12/0/terrain_set = 0
+29:12/0/terrain = 0
+29:12/0/probability = 0.0
+30:12/0 = 0
+30:12/0/terrain_set = 0
+30:12/0/terrain = 0
+30:12/0/probability = 0.0
+30:13/0 = 0
+30:13/0/terrain_set = 0
+30:13/0/terrain = 0
+30:14/0 = 0
+30:14/0/terrain_set = 0
+30:14/0/terrain = 0
+30:14/0/probability = 0.0
+30:15/0 = 0
+30:15/0/terrain_set = 0
+30:15/0/terrain = 0
+30:15/0/probability = 0.0
+31:15/0 = 0
+31:15/0/terrain_set = 0
+31:15/0/terrain = 0
+31:15/0/probability = 0.0
+31:13/0 = 0
+31:13/0/terrain_set = 0
+31:13/0/terrain = 0
+31:13/0/probability = 0.0
+31:12/0 = 0
+31:12/0/terrain_set = 0
+31:12/0/terrain = 0
+31:12/0/probability = 0.0
+31:14/0 = 0
+31:14/0/terrain_set = 0
+31:14/0/terrain = 0
+31:14/0/probability = 0.0
+
+[sub_resource type="TileSet" id="TileSet_vkgdr"]
+tile_size = Vector2i(32, 32)
+occlusion_layer_0/light_mask = 1
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "Terrain 0"
+terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
+terrain_set_0/terrain_1/name = "Terrain 1"
+terrain_set_0/terrain_1/color = Color(0.5, 0.4375, 0.25, 1)
+sources/0 = SubResource("TileSetAtlasSource_s1226")
+sources/6 = SubResource("TileSetAtlasSource_btju2")
+pattern_0 = SubResource("TileMapPattern_ws510")
+pattern_1 = SubResource("TileMapPattern_47any")
+pattern_2 = SubResource("TileMapPattern_rnxtm")
+pattern_3 = SubResource("TileMapPattern_3rada")
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_dmxhf"]
+size = Vector2(30, 30)
+
+[node name="TileMap" type="Node2D" node_paths=PackedStringArray("camera")]
+script = ExtResource("1_eryf5")
+camera = NodePath("Camera2D")
+
+[node name="TerrainLayers" type="Node" parent="."]
+
+[node name="TerrainLayer_TilledSoil" type="TileMapLayer" parent="TerrainLayers"]
+tile_map_data = PackedByteArray("AAADAAAAAAAcAA8AAAACAAAAAAAcAA8AAAABAAAAAAAcAA8AAAAAAAAAAAAcAA8AAAA=")
+tile_set = SubResource("TileSet_vkgdr")
+
+[node name="TerrainLayer_Soil" type="TileMapLayer" parent="TerrainLayers"]
+tile_map_data = PackedByteArray("AAADAAAAAAAcAA8AAAACAAAAAAAcAA8AAAABAAAAAAAcAA8AAAAAAAAAAAAcAA8AAAA=")
+tile_set = SubResource("TileSet_vkgdr")
+
+[node name="TerrainLayer_Grass" type="TileMapLayer" parent="TerrainLayers"]
+tile_map_data = PackedByteArray("AAADAAAAAAAcAA8AAAACAAAAAAAcAA8AAAABAAAAAAAcAA8AAAAAAAAAAAAcAA8AAAA=")
+tile_set = SubResource("TileSet_vkgdr")
+
+[node name="TerrainLayer_Sand" type="TileMapLayer" parent="TerrainLayers"]
+tile_map_data = PackedByteArray("AAADAAAAAAAcAA8AAAACAAAAAAAcAA8AAAABAAAAAAAcAA8AAAAAAAAAAAAcAA8AAAA=")
+tile_set = SubResource("TileSet_vkgdr")
+
+[node name="TerrainLayer_Water" type="TileMapLayer" parent="TerrainLayers"]
+tile_map_data = PackedByteArray("AAADAAAAAAAcAA8AAAACAAAAAAAcAA8AAAABAAAAAAAcAA8AAAAAAAAAAAAcAA8AAAA=")
+tile_set = SubResource("TileSet_vkgdr")
+
+[node name="trueGrid" type="TileMapLayer" parent="."]
+modulate = Color(1, 1, 1, 0.494118)
+z_index = 3
+position = Vector2(-16, -16)
+tile_map_data = PackedByteArray("AAD8/wAABgAeAA0AAAD9/wAABgAeAA0AAAD+/wAABgAeAA0AAAD//wAABgAeAA0AAAAAAAAABgAeAA0AAAABAAAABgAeAA0AAAACAAAABgAeAA0AAAADAAAABgAeAA0AAAAEAAAABgAeAA0AAAAAAPz/BgAeAA0AAAAAAP3/BgAeAA0AAAAAAP7/BgAeAA0AAAAAAP//BgAeAA0AAAAAAAIABgAeAA0AAAAAAAMABgAeAA0AAAAAAAQABgAeAA0AAAAEAP//BgAeAA0AAAAIAP//BgAeAA0AAAAIAAAABgAeAA0AAAAEAAEABgAeAA0AAAAEAAIABgAeAA0AAAAFAAIABgAeAA0AAAAGAAIABgAeAA0AAAAHAAIABgAeAA0AAAAIAAEABgAeAA0AAAAIAAIABgAeAA0AAAAEAP7/BgAeAA0AAAAFAP7/BgAeAA0AAAAGAP7/BgAeAA0AAAAHAP7/BgAeAA0AAAAIAP7/BgAeAA0AAAD1/wAABgAeAA0AAAD2/wAABgAeAA0AAAD3/wAABgAeAA0AAAD4/wAABgAeAA0AAAD5/wAABgAeAA0AAAD6/wAABgAeAA0AAAD7/wAABgAeAA0AAAD8//7/BgAeAA0AAAD8////BgAeAA0AAAD8/wEABgAeAA0AAAD8/wIABgAeAA0AAAD5////BgAeAA0AAAD5/wEABgAeAA0AAAD8//3/BgAeAA0AAAD9//3/BgAeAA0AAAD8/wMABgAeAA0AAAD9/wMABgAeAA0AAAD4//7/BgAeAA0AAAD5//7/BgAeAA0AAAD6//7/BgAeAA0AAAD4/wIABgAeAA0AAAD5/wIABgAeAA0AAAD6/wIABgAeAA0AAAABAAUABgAeAA0AAAACAAYABgAeAA0AAAABAPv/BgAeAA0AAAACAPr/BgAeAA0AAAAJAP7/BgAeAA0AAAAJAP//BgAeAA0AAAAJAAAABgAeAA0AAAAJAAEABgAeAA0AAAAJAAIABgAeAA0AAAAKAP//BgAeAA0AAAAKAAAABgAeAA0AAAAKAAEABgAeAA0AAAALAAAABgAeAA0AAAAAAAEABgAeAA0AAAABAAEAAAAeAA0AAAA=")
+tile_set = SubResource("TileSet_vkgdr")
+
+[node name="Sprite2D" type="Sprite2D" parent="trueGrid"]
+modulate = Color(1, 1, 1, 0.145098)
+position = Vector2(23, 24)
+texture = SubResource("PlaceholderTexture2D_dmxhf")
+
+[node name="Camera2D" type="Camera2D" parent="."]

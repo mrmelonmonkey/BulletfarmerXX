@@ -1,28 +1,30 @@
-[gd_scene load_steps=5 format=3 uid="uid://vqfmg4mowscw"]
+[gd_scene load_steps=6 format=3 uid="uid://vqfmg4mowscw"]
 
-[ext_resource type="PackedScene" uid="uid://c5d3mwt2k7em4" path="res://scenes/PlayerStats.tscn" id="1_b1xub"]
-[ext_resource type="Script" path="res://scripts/StartingStats.gd" id="2_8wne5"]
-[ext_resource type="PackedScene" uid="uid://briydtvkxgvdv" path="res://scenes/player_health_display.tscn" id="3_jynsq"]
+[ext_resource type="PackedScene" uid="uid://cnmxf3kfsayp5" path="res://scenes/TileMap.tscn" id="1_ilhin"]
+[ext_resource type="PackedScene" uid="uid://c5d3mwt2k7em4" path="res://scenes/PlayerStats.tscn" id="2_tskan"]
+[ext_resource type="Script" path="res://scripts/StartingStats.gd" id="3_otvmt"]
+[ext_resource type="PackedScene" uid="uid://briydtvkxgvdv" path="res://scenes/player_health_display.tscn" id="4_0vr66"]
 
 [sub_resource type="Resource" id="Resource_47a5d"]
-script = ExtResource("2_8wne5")
+script = ExtResource("3_otvmt")
 level = 1
 experience = 99
 max_health = 200
 health = 100
 speed = 200
 
-[node name="Node" type="Node"]
+[node name="MainScene" type="Node"]
 
 [node name="Node2D" type="Node2D" parent="."]
 
-[node name="TileMapLayer" type="TileMapLayer" parent="Node2D"]
-visible = false
-
 [node name="Environment" type="Node2D" parent="Node2D"]
 
-[node name="PlayerStats" parent="Node2D" instance=ExtResource("1_b1xub")]
+[node name="TileMap" parent="Node2D/Environment" instance=ExtResource("1_ilhin")]
+
+[node name="PlayerStats" parent="Node2D" instance=ExtResource("2_tskan")]
 starting_stats = SubResource("Resource_47a5d")
+
+[node name="Camera2D" type="Camera2D" parent="Node2D/PlayerStats"]
 
 [node name="UI" type="Control" parent="."]
 layout_mode = 3
@@ -32,7 +34,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="player_health_display" parent="UI" instance=ExtResource("3_jynsq")]
+[node name="player_health_display" parent="UI" instance=ExtResource("4_0vr66")]
 layout_direction = 2
 layout_mode = 1
 anchors_preset = 3

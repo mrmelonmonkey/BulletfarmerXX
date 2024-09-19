@@ -1,0 +1,27 @@
+[gd_resource type="TileSet" load_steps=5 format=3 uid="uid://bfi2rxsd8efaa"]
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_ws510"]
+tile_data = PackedInt32Array(0, 851968, 7, 65536, 851968, 8, 1, 917504, 7, 65537, 917504, 8)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_47any"]
+tile_data = PackedInt32Array(0, 851968, 7, 65536, 851968, 8, 1, 917504, 7, 65537, 917504, 8, 2, 983040, 7, 65538, 983040, 8)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_rnxtm"]
+tile_data = PackedInt32Array(0, 983040, 7, 65536, 983040, 8, 1, 1048576, 7, 65537, 1048576, 8, 2, 1114112, 7, 65538, 1114112, 8)
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_3rada"]
+tile_data = PackedInt32Array(0, 1048576, 7, 65536, 1048576, 8, 1, 1114112, 7, 65537, 1114112, 8)
+
+[resource]
+resource_local_to_scene = true
+tile_size = Vector2i(32, 32)
+occlusion_layer_0/light_mask = 1
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "Terrain 0"
+terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
+terrain_set_0/terrain_1/name = "Terrain 1"
+terrain_set_0/terrain_1/color = Color(0.5, 0.4375, 0.25, 1)
+pattern_0 = SubResource("TileMapPattern_ws510")
+pattern_1 = SubResource("TileMapPattern_47any")
+pattern_2 = SubResource("TileMapPattern_rnxtm")
+pattern_3 = SubResource("TileMapPattern_3rada")
