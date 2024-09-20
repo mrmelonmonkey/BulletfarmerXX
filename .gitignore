@@ -1,5 +1,4 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
-godot-git-plugin-v3.1.1.zip
-godot-git-plugin-v3.1.1/
+addons/
